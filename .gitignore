@@ -1,33 +1,13 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+#include <stdio.h>
+int main()
+{
+ int a=230,x=24,r=100,t;
+     / a:りんごの金額 x:りんごの個数 r:レート t:トータル /
+ if(x>=10)r=90;
+     / りんごの個数が10を超えたらレートを90％にする /
+ t=a*x*r/100;
+     / りんごの金額掛ける個数掛けるレート割る100をする /
+ printf("%d",t);
+      / トータルの値を出力 /
+ return 0;
+}
